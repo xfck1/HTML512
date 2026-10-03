@@ -3,79 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    <title>ideas digitales</title>
+    <title>Noticias</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px;
+            background: #ff9900;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #351700;
+        }
+
+        h1 {
+            margin: 0 0 15px;
+            font-size: 42px;
+            font-weight: 400;
+        }
+
+        .noticias {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 35px;
+        }
+
+        .noticia img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .noticia h2 {
+            margin: 4px 0;
+            font-size: 21px;
+            font-weight: bold;
+        }
+
+        .noticia p {
+            margin: 0 0 25px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 800px) {
+            .noticias {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <header id="main-header">
-        <div class="container">
-            <h1>ideas digitales</h1>
-            <p>Arte, ciencias y tecnología para la humanidad</p>
-        </div>
-    </header>
 
-    <main>
-        <section id="main-banner">
-            <img src="banner.jpg" alt="banner" class="banner-img">
-        </section>
+    <h1>Noticias</h1>
 
-        <section id="nosotros" class="padded">
-            <div class="container">
-                <h2>Nosotros</h2>
-                <p>Somos un grupo de personas apasionadas por la tecnología y el arte digital. Nuestro objetivo es crear soluciones innovadoras que mejoren la vida de las personas a través del uso de la tecnología.</p>
-            </div>
-        </section>
+    <main class="noticias">
 
-        <section id="noticias" class="padded">
-            <div class="container">
-                <h2>Noticias</h2>
-                <div class="row">
-                    <article class="col" id="caja1">
-                        <img src="oro.jpg" alt="">
-                        <h3>Bajo el oro</h3>
-                        <p>Mantente al día con nuestras últimas noticias y actualizaciones sobre nuestros proyectos y eventos.</p>
-                    </article>
+        <article class="noticia">
+            <img src="https://images.unsplash.com/photo-1610375461246-83df859d849d?auto=format&fit=crop&w=800&q=80" alt="Oro">
+            <h2>bajó el oro</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Amet nesciunt temporibus, ratione ut quis doloribus quam
+                distinctio? Voluptas exercitationem deserunt est laborum
+                repellat, repudiandae consequuntur vero impedit qui?
+                Odio amet ea pariatur vitae? Ducimus repellendus atque
+                molestias, culpa explicabo omnis rerum, tempora ab
+                necessitatibus quo sequi non minus fugit amet!
+            </p>
 
-                    <article class="col" id="caja2">
-                        <img src="litio.jpg" alt="">
-                        <h3>Bajo el litio</h3>
-                        <p>Mantente al día con nuestras últimas noticias y actualizaciones sobre nuestros proyectos y eventos.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Earum quo omnis, perspiciatis saepe ut quae maiores officiis
+                laborum deleniti possimus voluptatem voluptatum dicta
+                consectetur molestiae, ipsum sunt totam et. Facere!
+            </p>
+        </article>
 
-        <section id="valores" class="padded">
-            <div class="container">
-                <div class="row">
-                    <div class="col" id="valor1">
-                        <h3>Valor 1</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla ullam vero autem voluptatibus minima! Quasi mollitia minima nihil, fugiat quibusdam quod explicabo vel quia tempora sit unde, soluta quisquam ipsa?</p>
-                    </div>
 
-                    <div class="col" id="valor2">
-                        <h3>Valor 2</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla ullam vero autem voluptatibus minima! Quasi mollitia minima nihil, fugiat quibusdam quod explicabo vel quia tempora sit unde, soluta quisquam ipsa?</p>
-                    </div>
+        <article class="noticia">
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80" alt="ChatGPT">
+            <h2>chat gpt para las empresa</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Amet nesciunt temporibus, ratione ut quis doloribus quam
+                distinctio? Voluptas exercitationem deserunt est laborum
+                repellat, repudiandae consequuntur vero impedit qui?
+                Odio amet ea pariatur vitae? Ducimus repellendus atque
+                molestias, culpa explicabo omnis rerum, tempora ab
+                necessitatibus quo sequi non minus fugit amet!
+            </p>
 
-                    <div class="col" id="valor3">
-                        <h3>Valor 3</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla ullam vero autem voluptatibus minima! Quasi mollitia minima nihil, fugiat quibusdam quod explicabo vel quia tempora sit unde, soluta quisquam ipsa?</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Earum quo omnis, perspiciatis saepe ut quae maiores officiis
+                laborum deleniti possimus voluptatem voluptatum dicta
+                consectetur molestiae, ipsum sunt totam et. Facere!
+            </p>
+        </article>
 
-        <section id="empresa" class="padded">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h2>Nuestra Empresa</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum pariatur blanditiis praesentium, quod a sequi sint omnis nulla nesciunt, suscipit quidem facilis incidunt. Esse explicabo nisi necessitatibus. Officiis iusto iste repellendus perspiciatis, similique temporibus voluptatibus facere odit dolorem tempore ipsum nisi sit ea saepe deserunt deleniti voluptates placeat commodi!</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+
+        <article class="noticia">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Litio">
+            <h2>nuevo yacimiento de litio</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Amet nesciunt temporibus, ratione ut quis doloribus quam
+                distinctio? Voluptas exercitationem deserunt est laborum
+                repellat, repudiandae consequuntur vero impedit qui?
+                Odio amet ea pariatur vitae? Ducimus repellendus atque
+                molestias, culpa explicabo omnis rerum, tempora ab
+                necessitatibus quo sequi non minus fugit amet!
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Earum quo omnis, perspiciatis saepe ut quae maiores officiis
+                laborum deleniti possimus voluptatem voluptatum dicta
+                consectetur molestiae, ipsum sunt totam et. Facere!
+            </p>
+        </article>
+
     </main>
+
 </body>
 </html>
