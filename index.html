@@ -1,69 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HTML CON IA Y HUMANIDAD</title>
-<style>
-body{margin:0;font-family:Arial,sans-serif;background:#0f172a;color:#fff}
-header{background:linear-gradient(90deg,#0ea5e9,#2563eb);padding:24px;text-align:center}
-nav{display:flex;justify-content:center;gap:20px;background:#111827;padding:12px;flex-wrap:wrap}
-nav a{color:#fff;text-decoration:none;font-weight:bold}
-section{max-width:1000px;margin:auto;padding:30px 18px}
-.card{background:#1e293b;border-radius:18px;padding:16px;margin:18px 0;box-shadow:0 6px 18px rgba(0,0,0,.35)}
-img{width:100%;border-radius:14px}
-h2{color:#38bdf8}
-ul{line-height:1.7}
-footer{background:#111827;text-align:center;padding:18px;color:#cbd5e1}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>ideas digitales</title>
 </head>
 <body>
+    <header id="main-header">
+        <div class="container">
+            <h1>ideas digitales</h1>
+            <p>Arte, ciencias y tecnología para la humanidad</p>
+        </div>
+    </header>
 
-<header>
-<h1>HTML CON IA Y HUMANIDAD</h1>
-<p>Turismo Brasil Colombia Perú mariguana México• Ciberseguridad • Electrónica</p>
-</header>
+    <main>
+        <section id="main-banner">
+            <img src="banner.jpg" alt="banner" class="banner-img">
+        </section>
 
-<nav>
-<a href="#sise">SISE</a>
-<a href="#ciber">Ciberataques</a>
-<a href="#electronica">Electrónica</a>
-</nav>
+        <section id="nosotros" class="padded">
+            <div class="container">
+                <h2>Nosotros</h2>
+                <p>Somos un grupo de personas apasionadas por la tecnología y el arte digital. Nuestro objetivo es crear soluciones innovadoras que mejoren la vida de las personas a través del uso de la tecnología.</p>
+            </div>
+        </section>
 
+        <section id="noticias" class="padded">
+            <div class="container">
+                <h2>Noticias</h2>
+                <div class="row">
+                    <article class="col" id="caja1">
+                        <img src="oro.jpg" alt="">
+                        <h3>Bajo el oro</h3>
+                        <p>Mantente al día con nuestras últimas noticias y actualizaciones sobre nuestros proyectos y eventos.</p>
+                    </article>
 
-<section id="ciber">
-<div class="card">
-<h2>🔐 Tipos de Ciberataques</h2>
-<img src="1000566533.jpg" alt="Tipos de Ciberataques">
-<p>Algunos ataques comunes incluyen:</p>
-<ul>
-<li>Phishing.</li>
-<li>Phishing dirigido.</li>
-<li>DDoS.</li>
-<li>SQL Injection.</li>
-<li>Cross-Site Scripting (XSS).</li>
-<li>Ransomware.</li>
-<li>Fuerza bruta.</li>
-<li>Ingeniería social.</li>
-</ul>
-</div>
-</section>
+                    <article class="col" id="caja2">
+                        <img src="litio.jpg" alt="">
+                        <h3>Bajo el litio</h3>
+                        <p>Mantente al día con nuestras últimas noticias y actualizaciones sobre nuestros proyectos y eventos.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-<section id="electronica">
-<div class="card">
-<h2>🔧 Circuito Electrónico</h2>
-<img src="1000566562.jpg" alt="Circuito electrónico con batería Toshiba">
-<p>Fotografía de una placa electrónica con batería Toshiba de 9V, zumbador y componentes electrónicos.</p>
-<ul>
-<li>🔋 Alimentación de 9V.</li>
-<li>📟 Placa de circuito impreso.</li>
-<li>🔊 Zumbador integrado.</li>
-<li>⚡ Componentes electrónicos y pistas.</li>
-</ul>
-</div>
-</section>
+        <section id="valores" class="padded">
+            <div class="container">
+                <div class="row">
+                    <div class="col" id="valor1">
+                        <h3>Valor 1</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla ullam vero autem voluptatibus minima! Quasi mollitia minima nihil, fugiat quibusdam quod explicabo vel quia tempora sit unde, soluta quisquam ipsa?</p>
+                    </div>
 
-<footer>GITHUB.io.HTML</footer>
+                    <div class="col" id="valor2">
+                        <h3>Valor 2</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla ullam vero autem voluptatibus minima! Quasi mollitia minima nihil, fugiat quibusdam quod explicabo vel quia tempora sit unde, soluta quisquam ipsa?</p>
+                    </div>
 
+                    <div class="col" id="valor3">
+                        <h3>Valor 3</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla ullam vero autem voluptatibus minima! Quasi mollitia minima nihil, fugiat quibusdam quod explicabo vel quia tempora sit unde, soluta quisquam ipsa?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="empresa" class="padded">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2>Nuestra Empresa</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum pariatur blanditiis praesentium, quod a sequi sint omnis nulla nesciunt, suscipit quidem facilis incidunt. Esse explicabo nisi necessitatibus. Officiis iusto iste repellendus perspiciatis, similique temporibus voluptatibus facere odit dolorem tempore ipsum nisi sit ea saepe deserunt deleniti voluptates placeat commodi!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
